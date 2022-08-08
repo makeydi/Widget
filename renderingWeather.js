@@ -9,6 +9,8 @@ function renderingWeather(data) {
         <div class="weather-status">${data.list[0].weather[0].description}</div>
         <img class="icon-today" src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png" alt="icon-today">
         <div class="wether-temper">${Math.round(data.list[0].main.temp)} &degC</div>`;
+    mainInfo.innerHTML = templateMainInfo;
+    
     const otherInfo = document.querySelector(".other-info");
     const templateOtherInfo = `
         <div>Как будто ${Math.round(data.list[0].main.feels_like)} &degC</div>
@@ -17,9 +19,12 @@ function renderingWeather(data) {
         <div>Барометр ${data.list[0].main.pressure} мбар</div>
         <div>Влажность ${data.list[0].main.humidity} %</div>
         <div>Восход ${parseMillisec(data.city.sunrise)}</div>
-        <div>Заход солнца ${parseMillisec(data.city.sunset)}</div>`;
+        <div>Заход солнца ${parseMillisec(data.city.sunset)}</div>
+        <div>Город ${data.city.name}</div>
+        <div>Страна ${data.city.country}</div>
+        <div>информация на момент ${data.list[0].dt_txt}</div>`;
     otherInfo.innerHTML = templateOtherInfo;
-    mainInfo.innerHTML = templateMainInfo;
+    
     const fiveDays = document.querySelector('.week-container');
     const templateFiveDays = `
         <div class="week-day">

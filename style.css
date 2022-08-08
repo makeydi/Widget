@@ -14,7 +14,9 @@ body {
     box-sizing: border-box;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 20px auto;
+    margin-bottom: 10px;
+
 }
 
 .input-city, .btn-form {
@@ -41,7 +43,12 @@ body {
 .other-info {
     align-items: center;
     margin-right: 30px;
-    font-size: 20px;   
+    font-size: 20px; 
+    width: 30%;  
+}
+
+.temp-days {
+    width: 65%;
 }
 
 .other-info div {
@@ -70,4 +77,20 @@ body {
 .night-temp {
     font-size: 14px;
     color:  rgb(73, 86, 99);
+}
+
+.quotes-container {
+    font-size: small;
+}
+
+.quote-author {
+    font-style: italic;
+}
+
+#map {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
 }

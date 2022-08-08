@@ -9,5 +9,4 @@ function renderMap(x,y){
             });
         }
 }
-
 export default renderMap;

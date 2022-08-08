@@ -4,5 +4,4 @@ function renderingQuote(dataQuote) {
     quoteBox.innerHTML = `''${dataQuote.quote.body}''`;
     quoteAuthor.innerHTML += dataQuote.quote.author;
 }
-    
 export default renderingQuote;

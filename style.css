@@ -1,0 +1,95 @@
+body {
+    padding: 100px auto;
+}
+
+.container {
+    display: flex;
+    max-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(58, 68, 78);
+    padding: 30px;
+    background-color: rgb(159, 159, 239);
+    border-radius: 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+.input-city, .btn-form {
+    font-size: large;
+    color: rgb(218, 229, 238);
+    background-color: rgb(55, 55, 70);
+    border: 1px solid rgb(101, 101, 122);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-info {
+    margin: 30px;
+    text-align: center;
+}
+
+.main-info div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.other-info {
+    align-items: center;
+    margin-right: 30px;
+    font-size: 20px; 
+    width: 30%;  
+}
+
+.temp-days {
+    width: 65%;
+}
+
+.other-info div {
+    margin-top: 10px;
+}
+
+.week-container {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.week-container div {
+    margin-left: 5px;
+}
+
+.week-day div {
+    justify-content: center;
+    text-align: center;
+}
+
+.day-icon img {
+    width: 50px;
+}
+
+.night-temp {
+    font-size: 14px;
+    color:  rgb(73, 86, 99);
+}
+
+.quotes-container {
+    font-size: small;
+}
+
+.quote-author {
+    font-style: italic;
+}
+
+#map {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+}
